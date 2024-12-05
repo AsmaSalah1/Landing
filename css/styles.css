@@ -109,6 +109,22 @@ section {
     padding: 4em;
   }
 }
+/* لإصلاح مشكلة التداخل عند الشاشات الصغيرة */
+@media only screen and (max-width: 600px) {  
+  nav ul {  
+      padding: 0;
+      text-align: center; /* لجعل القائمة وسط الشاشة */  
+  }
+
+  nav ul li {
+      display: block; /* لجعل العناصر تتكدس بشكل عمودي */
+  }
+
+  nav ul li a {  
+      font-size: 12px; /* تقليل حجم النص */  
+      padding: 10px 5px; /* تقليل المسافات بين العناصر */  
+  }
+}
 
 section:nth-of-type(even) .landing__container {
   margin-right: 0;
